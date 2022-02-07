@@ -1,0 +1,954 @@
+@import "./Assets/Style/all";
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Montserrat:wght@200&family=Poppins:wght@300;400&display=swap');
+main{
+    #slider{
+        width: 100%;
+        height: 100vh;
+        .slider{
+            width: 100%;
+            .slideshow-container {
+                margin: auto;
+                position: relative;
+                width: 100%;
+                /* Next & previous buttons */
+                .prev, .next {
+                    @include center;
+                    position: absolute;
+                    top: 50%;
+                    width: 60px;
+                    height: 60px;
+                    padding: 15px;
+                    text-align: center;
+                    color: #fff;
+                    font-size: 18px;
+                    transition: 0.6s ease;
+                    border-radius: 50%;
+                    user-select: none;
+                    background-color:  #000;
+                    transform: translateY(-50%);
+                    opacity: 0;
+                }
+                /* Position the "next button" to the right */
+                .next {
+                    right: 2%;
+                }
+                .prev {
+                    left: 2%;
+                }
+                /* On hover, add a black background color with a little bit see-through */
+                .prev:hover, .next:hover {
+                    opacity: 1;
+                    background-color: $Primary;
+                }
+                .mySlides{
+                    display: none;
+                    figure{
+                        transition: 2s;
+                        img {
+                            vertical-align: middle;
+                            position: relative;
+                        }
+                    }
+                    .slider-content{
+                        width: 100%;
+                        height: 100%;
+                        position: absolute;
+                        padding: 150px 15px 170px;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%,-50%);
+                        .container{
+                            text-align: center;
+                            h3{
+                                font-family: Courgette;
+                                font-size: 60px;
+                                line-height: 1.1;
+                                color: #fff;
+                                margin-bottom: 15px;
+                            }
+                            h1{
+                                font-family: Poppins;
+                                font-weight: 700;
+                                font-size: 90px;
+                                line-height: 1.1;
+                                color: #fff;
+                                text-transform: uppercase;
+                                letter-spacing: 10px;
+                                word-spacing: 10px;
+                                    margin-bottom: 37px;
+                            }
+                            a{
+                                background: #fff;
+                                border-radius: 10px;
+                                font-family: Montserrat;
+                                font-weight: 400;
+                                font-size: 12px;
+                                line-height: 1.1;
+                                color: #ec1d25;
+                                text-transform: uppercase;
+                                width: 135px;
+                                height: 40px;
+                                text-align: center;
+                                padding:15px 20px;
+                                transition:0.4s;
+                                &:hover{
+                                    background-color: $Primary;
+                                    color: #fff;
+                                }
+                            }
+                        }
+                    }
+            }
+            /* The dots/bullets/indicators */
+            .dots{
+                position: absolute;
+                right: 50%;
+                bottom: 50px;
+                .dot {
+                    cursor: pointer;
+                    height: 15px;
+                    width: 15px;
+                    margin: 0 2px;
+                    background-color: #bbb;
+                    border-radius: 50%;
+                    display: inline-block;
+                    transition: background-color 0.6s ease;
+                }    
+                 .dot:hover {
+                     border: 2px solid #fff;
+                    background-color: $Primary;
+                    }
+            }
+            
+            }                   
+        }
+    }
+    #welcome{
+        background-image: url(./Assets/Image/background.jpeg);
+        background-repeat: repeat;
+        .welcome{
+            .container{
+                .welcome-all{
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+                    padding-top: 120px;
+                    padding-bottom: 105px;
+                    .welcome-content{
+                        width: 45%;
+                        text-align: center;
+                        h3{
+                            font-family: Courgette;
+                            font-size: 30px;
+                            line-height: 1.2;
+                            color: $textcolor;
+                        }
+                        h2{
+                            font-family: Poppins;
+                            font-weight: 700;
+                            font-size: 50px;
+                            line-height: 1.2;
+                            color: #222;
+                            text-transform: uppercase;
+                            letter-spacing: 6px;
+                            margin-bottom: 35px;
+                            margin-top: 5px;
+                            font-style: bolt;
+                        }
+                        p{
+                            font-family: Montserrat;
+                            font-weight: 400;
+                            font-size: 15px;
+                            line-height: 1.7;
+                            color: #666; 
+                            margin-bottom: 22px;                           
+                        }
+                        a{
+                            font-family: Montserrat;
+                            font-weight: 400;
+                            font-size: 12px;
+                            color: #222;
+                            text-transform: uppercase;
+                            letter-spacing: 1px;
+                            &:hover{
+                                color: #ec1d25
+                            }
+                        }
+                        
+                    }
+                    .welcome-picture{
+                        padding:0px 15px 30px;
+                        align-items: center;
+
+                        figure{
+                            overflow: hidden;
+                            border-radius: 15px;
+                            width: 390px;
+                            img{
+                                width: 100%;
+                                border-radius: 15px;
+                                height: 390px;
+                                object-fit: cover;
+                                @include hover-img;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    #intro{
+        width: 100%;
+        .intro{
+            .intro-parallax{
+                width: 100%;
+                background-image: url(./Assets/Image/parallax.jpg);
+                background-position: center 224.667px;
+                background-attachment: fixed;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                text-align: center;
+                padding-bottom: 158px;
+                padding-top: 135px;
+                p{
+                    font-family: Courgette;
+                    font-size: 30px;
+                    line-height: 1.2;
+                    color: #d61c22;
+                    padding-left: 15px;
+                    padding-right: 15px;
+                }
+                h1{                           
+                    font-family: Poppins;
+                    font-weight: 700;
+                    font-size: 50px;
+                    line-height: 1.2;
+                    color: white;
+                    text-transform: uppercase;
+                    letter-spacing: 10px;
+                    word-spacing: 6px;
+                }
+            }
+            .intro-content{
+                width: 100%;
+                padding-top: 77px;
+                padding-bottom: 133px;
+                .container{
+                    .intro-wrapper{
+                        @include between;
+                        flex-wrap: wrap;
+                        .intro-card{
+                            width: 33%;
+                            padding: 30px 15px 0px;
+                            .intro-card-picture{
+                                border-radius: 10px;
+                                overflow: hidden;
+                                a{
+                                    img{
+                                        width: 100%;
+                                        border-radius: 10px;
+                                        @include hover-img;
+                                    }
+                                }
+                            }
+                            .intro-card-content{
+                                padding-top: 35px;
+                                a{
+                                    h3{                                      
+                                        font-family: Poppins, sans-serif;
+                                        font-weight: 500;
+                                        font-size: 22px;
+                                        color: #333333;
+                                        text-transform: uppercase;
+                                        letter-spacing: 3px;
+                                        font-weight: bold;
+                                        @include hover-a;
+                                    }
+                                }
+                                p{
+                                    margin-bottom: 20px;
+                                    font-family: Montserrat;
+                                    font-weight: 400;
+                                    font-size: 15px;
+                                    line-height: 1.7;
+                                    color: #666;
+                                }
+                                a{
+                                    font-family: Montserrat;
+                                    font-weight: 400;
+                                    font-size: 12px;
+                                    color: #222222;
+                                    text-transform: uppercase;
+                                    letter-spacing: 1px;
+                                    line-height: 1.7;
+                                    @include hover-a;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    #our-menu{
+        width: 100%;
+        background-image: url(./Assets/Image/our-menu.bg.png);
+        background-repeat: repeat;
+        padding-bottom: 120px;
+        padding-top: 115px;
+        .our-menu{
+            .container{
+                .our-menu-all{
+                    .our-menu-content{
+                        text-align: center;
+                        margin-bottom: 22px;
+                        p{
+                            font-family: Courgette;
+                            font-size: 30px;
+                            line-height: 1.2;
+                            color:$textcolor;
+                            font-style: italic;
+                        }
+                        h3{
+                            font-family: Poppins;
+                            font-weight: 700;
+                            font-size: 50px;
+                            line-height: 1.2;
+                            color: #222222;
+                            text-transform: uppercase;
+                            letter-spacing: 10px;
+                            word-spacing: 8px;
+                            margin-top: 2px;
+                        }
+                    }
+                    .our-menu-wrapper{
+                        @include between;
+                        .our-menu-cards-first {
+                            width: 66%;
+                            display: flex;
+                            flex-direction: column;
+                            flex-wrap: wrap;
+                            .our-menu-card{
+                                @include between;
+                                width: 100%;
+                                .our-menu-row-card{
+                                    width: 50%;
+                                    padding: 0px 15px;
+                                    margin-top: 30px;
+                                    width: 100%;
+                                    .row-card{
+                                        width: 100%;
+                                        border-radius: 10px;
+                                        position: relative;
+                                        overflow: hidden;
+                                        img{
+                                            width: 100%;
+                                            border-radius: 10px;
+                                            @include hover-img;
+                                        }
+                                        a{
+                                            letter-spacing: 3px;
+                                            position: absolute;
+                                            top: 50%;
+                                            left: 50%;
+                                            transform: translate(-50%,-50%);
+                                            padding: 15px 30px;
+                                            background-color: #fff;
+                                            border-radius: 10px;
+                                            opacity: .9;
+                                            font-family: Poppins;
+                                            font-weight: 500;
+                                            font-size: 22px;
+                                            color: #333;
+                                            text-transform: uppercase;
+                                            &:hover{
+                                                background-color: #ec1d25;
+                                                color: #fff;
+                                            }
+                                        }
+
+                                    }
+                                }
+                            }
+                            .our-menu-card-buttom{
+                                width: 100%;
+                                position: relative;
+                                border-radius: 10px;
+                                margin-top: 30px;
+                                overflow: hidden;
+                                img{
+                                    width: 100%;
+                                    border-radius: 10px;
+                                    @include hover-img;
+                                }
+                                a{
+                                    letter-spacing: 3px;
+                                    position: absolute;
+                                    top: 50%;
+                                    left: 50%;
+                                    transform: translate(-50%,-50%);
+                                    padding: 15px 30px;
+                                    background-color: #fff;
+                                    border-radius: 10px;
+                                    opacity: .9;
+                                    font-family: Poppins;
+                                    font-weight: 500;
+                                    font-size: 22px;
+                                    color: #333;
+                                    text-transform: uppercase;
+                                    &:hover{
+                                        background-color: #ec1d25;
+                                        color: #fff;
+                                    }
+                                }
+                            }
+                        }
+                        .our-menu-cards-second{
+                            width: 30.3%;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
+                            flex-wrap: wrap;
+                            .our-menu-column-card{
+                                width: 100%;
+                                .column-card{
+                                    position: relative;
+                                    margin-top: 30px;
+                                    width: 100%;
+                                    border-radius: 10px;
+                                    overflow: hidden;
+                                    img{
+                                        width: 100%;
+                                        @include hover-img;
+                                        border-radius: 10px;
+
+                                    }
+                                    a{
+                                        letter-spacing: 3px;
+                                        position: absolute;
+                                        top: 50%;
+                                        left: 50%;
+                                        transform: translate(-50%,-50%);
+                                        padding: 15px 30px;
+                                        background-color: #fff;
+                                        border-radius: 10px;
+                                        opacity: .9;
+                                        font-family: Poppins;
+                                        font-weight: 500;
+                                        font-size: 22px;
+                                        color: #333;
+                                        text-transform: uppercase;
+                                        &:hover{
+                                            background-color: #ec1d25;
+                                            color: #fff;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    #reservation{
+        background-image: url(./Assets/Image/background.jpeg);
+        background-repeat: repeat;
+        padding-bottom: 110px;
+        padding-top: 100px;
+        .container{
+            .reservation{
+                width: 100%;
+                @include between;
+                .book-table{
+                    padding-bottom: 30px;
+                    width: 50%;
+                    .book-table-content{
+                        text-align: center;
+                        .tablep{
+                           font-family: Courgette;
+                            font-size: 30px;
+                            line-height: 1.2;
+                            color: #d61c22;
+                        }
+                        h3{
+                            font-family: Poppins;
+                            font-weight: 700;
+                            font-size: 50px;
+                            line-height: 1.2;
+                            color: #222;
+                            text-transform: uppercase;
+                            letter-spacing: 6px;
+                            margin-bottom: 35px;
+                            margin-top: 2px;
+                        }
+                    }
+                    form{
+                        .form-row{
+                            @include between;
+                            padding-right: 15px;
+                            padding-left: 15px;
+                            .form-column{
+                                padding-right: 15px;
+                                padding-left: 15px;
+                                width: 50%;
+                                text-align: start;
+                                padding-right: 15px;
+                                padding-left: 15px;
+                                p{
+                                    font-family: Montserrat;
+                                    font-weight: 400;
+                                    font-size: 15px;
+                                    color: #555;
+                                }
+                                .sel-op{
+                                    width: 100%;
+                                    height: 50px;
+                                    border-radius: 10px;
+                                    border: 2px solid #d9d9d9;
+                                    margin-bottom: 23px;
+                                    margin-top: 3px;
+                                    .selection{
+                                        font-size: 20px;
+                                        option{
+                                            font-size: 20px;
+
+                                        }
+                                    }
+                                }
+                                .date{
+                                    width: 100%;
+                                    height: 50px;
+                                    border-radius: 10px;
+                                    border: 2px solid #d9d9d9;
+                                    font-family: Montserrat;
+                                    font-weight: 400;
+                                    font-size: 14px;
+                                    color: #666;
+                                    margin-top: 3px;
+                                    margin-bottom: 23px;
+                                }
+                                input{
+                                    border-radius: 10px;
+                                    width: 100%;
+                                    height: 50px;
+                                    margin-top: 3px;
+                                    margin-bottom: 23px;
+                                    padding-left: 20px;
+                                    font-family: Montserrat;
+                                    font-weight: 400;
+                                    font-size: 14px;
+                                    color: #666;
+                                    &:focus{
+                                        border: 2px solid $Primary;
+                                    }
+                                }
+                            }
+                        }
+                        .btn{
+                            margin-top: 6px;
+                            button{
+                                background: #111;
+                                border-radius: 10px;
+                                width: 150px;
+                                height: 40px;
+                                font-family: Montserrat;
+                                font-weight: 400;
+                                font-size: 12px;
+                                line-height: 1.1;
+                                color: #fff;
+                                text-transform: uppercase;
+                                letter-spacing: 1px;
+                                &:hover{
+                                    background-color: $Primary;
+                                }
+                            }
+                        }
+                    }
+                }
+                .resrvation-picture{
+                    width: 50%;
+                    padding-top: 18px;
+                    padding-bottom: 30px;
+                    border-radius: 10px;
+                    padding-right: 15px;
+                    padding-left: 15px;
+                    @include center;
+                    figure{
+                        overflow: hidden;
+                        border-radius: 10px;
+                        max-width: 390px;
+                        img{
+                            width: 100%;
+                            border-radius: 10px;
+                            @include hover-img;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    #customer{
+        width: 100%;
+        height: 100vh;
+        .customer{
+            .customer-content{
+                text-align: center;
+                margin-bottom: 2px;
+                p{
+                    font-family: Courgette;
+                    font-size: 30px;
+                    line-height: 1.2;
+                    color: #d61c22;
+                    padding-right: 15px;
+                    padding-left: 15px;
+                }
+                h3{
+                    font-family: Poppins;
+                    font-weight: 700;
+                    font-size: 50px;
+                    line-height: 1.2;
+                    color: #222;
+                    text-transform: uppercase;
+                    letter-spacing: 11px;
+                    padding-right: 15px;
+                    padding-left: 20px;
+                    padding-top: 3px;
+                }
+            }
+            .customer-slider{
+                width: 100%;
+                .slideshow-container {
+                    width: 100%;
+                    position: relative;
+                    margin: auto;
+                /* Next & previous buttons */
+                .prev, .next {
+                    @include center;
+                    position: absolute;
+                    top: 50%;
+                    width: 60px;
+                    height: 60px;
+                    padding: 15px;
+                    text-align: center;
+                    color: #fff;
+                    font-size: 18px;
+                    transition: 0.6s ease;
+                    border-radius: 50%;
+                    user-select: none;
+                    background-color:  #000;
+                    transform: translateY(-50%);
+                    opacity: 0;
+                }
+                /* Position the "next button" to the right */
+                .next {
+                    right: 2%;
+                }
+                .prev {
+                    left: 2%;
+                }
+                /* On hover, add a black background color with a little bit see-through */
+                .prev:hover, .next:hover {
+                    opacity: 1;
+                    background-color: $Primary;
+                }
+                .mySlides {
+                    @include center;
+                    flex-direction: column;
+                    padding: 0px 15px;
+                    figure{
+                        width: 118px;
+                        height: 118px;
+                        border-radius: 50%;
+                        overflow: hidden;
+                        border: 4px solid #ec1d25;
+                        img{
+                            width: 100%;
+                        }
+                    }
+                    .customer-conntent{
+                        margin-top: 33px;
+                        text-align: center;
+                        p{
+                            font-family: Montserrat;
+                            font-weight: 400;
+                            font-size: 18px;
+                            color: #666;
+                            line-height: 1.7;
+                        }
+                        .start-rewiev{
+                            color: #ec1d25;
+                            margin-top: 12px;
+                            font-size: 18px;
+                        }
+                        .inf{
+                            font-family: Montserrat;
+                            font-weight: 400;
+                            font-size: 12px;
+                            color: #222;
+                            text-transform: uppercase;
+                            letter-spacing: 1px;
+                        }
+                    }
+                }
+                }
+                .dot-black{
+                    position: absolute;
+                    right: 50%;
+                    bottom: 50px;
+                    .dot {
+                        cursor: pointer;
+                        height: 15px;
+                        width: 15px;
+                        margin: 0 2px;
+                        background-color: #bbb;
+                        border-radius: 50%;
+                        display: inline-block;
+                        transition: background-color 0.6s ease;
+                    }    
+                     .dot:hover {
+                         border: 2px solid #fff;
+                        background-color: $Primary;
+                        } 
+                    }              
+            }
+        }
+    }
+    #our-video{
+        width: 100%;
+        background-image: url(./Assets/Image/cover-video.jpg);
+        background-attachment: fixed;
+        background-position: center 0;
+        background-repeat: no-repeat;
+        background-size: cover;
+        .our-video{
+            background-color: rgba(0,0,0,.5);    
+            padding-bottom: 250px;
+            padding-top: 225px;  
+            text-align: center;
+            .our-video-content{
+                p{                    
+                    font-family: Courgette;
+                    font-size: 30px;
+                    line-height: 1.2;
+                    color: #d61c22;
+                    padding: 0px 15px;
+                }
+                h3{ 
+                    font-family: Poppins;            
+                    font-weight: 700;
+                    font-size: 50px;
+                    line-height: 1.2;
+                    color: #fff;
+                    text-transform: uppercase;
+                    letter-spacing: 10px;
+                    word-spacing: 6px;
+                    padding: 3px 15px 0px;
+                }
+            }  
+            .our-video-play{
+                @include center;
+                margin-top: 43px;
+                margin-bottom: 33px;
+                width: 100%;
+                .our-video-play-button{
+                    width: 70px;
+                    height: 70px;
+                    @include center;
+                    border-radius: 50%;
+                    background-color: #fff;
+                    color: #222;
+                    transition: all .4s;
+                    i{
+                        font-size: 18px;
+                    }
+                    &:hover{
+                        width: 80px;
+                        height: 80px;
+                        background-color: $Primary;
+                        opacity: 0.5;
+                        color:white;
+                    }
+                }
+            }    
+        }
+    }
+    #blog{
+        padding-bottom: 123px;
+        padding-top: 115px;
+        background-color: #fff;
+        .container{
+            .blog{
+                .blog-content{
+                    margin-bottom: 22px;
+                    text-align: center;
+                    p{
+                        font-family: Courgette;
+                        font-size: 30px;
+                        line-height: 1.2;
+                        color: #d61c22;
+                    }
+                    h3{
+                        font-family: Poppins;
+                        font-weight: 700;
+                        font-size: 50px;
+                        line-height: 1.2;
+                        color: #222;
+                        text-transform: uppercase;
+                        letter-spacing: 10px;
+                        word-spacing: 8px;
+                        margin-top: 2px;
+                    }
+                }
+                .blog-wrapper{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: flex-start;
+                    flex-wrap: wrap;
+                    .blog-card-column{
+                        width: 33%;
+                        padding: 35px 15px 0px;
+                            .time{
+                                border-radius: 10px;
+                                border: 2px solid #d9d9d9;
+                                width: 100%;
+                                height: 50px;
+                                margin-bottom: 23px;
+                                margin-top: 3px;
+                            }
+                        .blog-card{
+                            .blog-card-picture{
+                                border-radius: 10px;
+                                overflow: hidden;
+                                position: relative;
+                                a{
+                                    img{
+                                        @include hover-img;
+                                        width: 100%;
+                                    }
+                                }
+                                p{
+                                    position: absolute;
+                                    left: 14px;
+                                    bottom: 11px;
+                                    background-color: rgba(0,0,0,.5);
+                                    padding: 3px 15px;
+                                    font-family: Montserrat;
+                                    font-weight: 400;
+                                    font-size: 12px;
+                                    color: #fff;
+                                    border-radius: 4px;
+                                }
+                            }
+                            .blog-card-content{
+                                padding-top: 35px;
+                                a{
+                                    h4{
+                                        font-family: Poppins;
+                                        font-weight: 500;
+                                        font-size: 22px;
+                                        color: #333;
+                                        text-transform: uppercase;
+                                        letter-spacing: 3px;
+                                        @include hover-a;
+                                        margin-bottom: 13px;
+                                    }
+                                }
+                                p{
+                                    font-family: Montserrat;
+                                    font-weight: 400;
+                                    font-size: 15px;
+                                    line-height: 1.7;
+                                    color: #666;
+                                    margin-bottom: 20px;
+                                }
+                                a{
+                                    font-family: Montserrat;
+                                    font-weight: 400;
+                                    font-size: 12px;
+                                    color: #222;
+                                    text-transform: uppercase;
+                                    letter-spacing: 1px;
+                                    i{
+                                        margin-left: 10px;
+                                    }     
+                                    @include hover-a;                           
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    #sing-up{
+        width: 100%;
+        padding: 0px 150px;
+        background-image: url(./Assets/Image/background.jpeg);
+        background-repeat: repeat;
+        .sing-up{
+            padding: 85px 5px;
+            form{
+                @include center;
+                span{
+                    font-family: Poppins;
+                    font-weight: bold;
+                    font-size: 22px;
+                    color: #333333;
+                    text-transform: uppercase;
+                    letter-spacing: 3px;
+                    margin: 10px;
+                }
+                .input{
+                    width: 100%;
+                    border-radius: 10px;
+                    width: 270px;
+                    height: 50px;
+                    margin: 10px;
+                    position: relative;
+                    font-family: Montserrat;
+                    font-weight: bold;
+                    font-size: 14px;
+                    color: #666666;
+                    input{
+                        width: 100%;
+                        height: 100%;
+                        border-radius: 10px;
+                        padding-left: 20px;
+                        border: 2px solid #d9d9d9;
+                        &:focus{
+                            border: 2px solid $Primary;
+                        }
+                    }
+                    i{
+                        position: absolute;
+                        right: 0px;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        margin-right:18px;                    
+                    }
+                }
+                button{
+                    margin: 10px;
+                    background: #111;
+                    border-radius: 10px;
+                    width: 160px;
+                    height: 40px;
+                    font-family: Montserrat;
+                    font-weight: bold;
+                    font-size: 12px;
+                    line-height: 1.1;
+                    color: white;
+                    text-transform: uppercase;
+                    letter-spacing: 1px;
+                    text-align: center;
+                    &:hover{
+                        background-color: $Primary;
+                    }
+                }
+            }
+        }
+    }
+}

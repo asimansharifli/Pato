@@ -1,0 +1,225 @@
+//Start Footer
+footer{
+    .footer{
+        .footer-top{
+            width: 100%;
+            background-color: #222;
+            .container{
+                padding-bottom: 70px;
+                padding-top: 40px;
+                .information{
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: flex-start;
+                    flex-wrap: wrap;
+                    text-align: start;
+                    .information-about{
+                        padding: 50px 15px 0px;
+                        width: 33.33%;
+                        h3{
+                            font-family: Poppins;
+                            font-weight: 500;
+                            font-size: 18px;
+                            color: #fff;
+                            text-transform: uppercase;
+                            letter-spacing: 2px; 
+                            margin-bottom: 33px;
+                        }
+                        .contact-us{
+                            width: 100%;
+                            .contact-us-list{
+                                margin-bottom: 70px;
+                                .contact-us-list-item{ 
+                                    margin-bottom: 14px;
+                                    a{
+                                        font-family: Montserrat;
+                                        font-weight: 400;
+                                        font-size: 15px;
+                                        color: #999;
+                                        line-height: 1.7;
+                                        @include hover-a;
+                                        i{
+                                            margin-right: 5px;
+                                        }
+                                    }                                  
+
+                                }
+                            }
+
+                        }
+                        .times{
+                            width: 100%;
+                            .times-list{
+                                .times-list-item{
+                                    font-family: Montserrat;
+                                    font-weight: 400;
+                                    font-size: 15px;
+                                    color: #999;
+                                    line-height: 1.7;
+                                    margin-bottom: 8px;
+                                }
+                            }
+                        }
+                    }
+                    .twitter{
+                        width: 33%;
+                        padding: 50px 15px 0px;
+                        h3{
+                            font-family: Poppins;
+                            font-weight: 500;
+                            font-size: 18px;
+                            color: #fff;
+                            text-transform: uppercase;
+                            letter-spacing: 2px; 
+                            margin-bottom: 33px;
+                        }
+                        .twit{
+                            margin-bottom: 25px;
+                            span{
+                                color: #ccc;
+                                margin-right: 5px;
+                                font-size: 15px;
+                            }
+                            a{
+                                font-family: Montserrat;
+                                font-weight: 400;
+                                font-size: 15px;
+                                color: #ec1d25;
+                                line-height: 1.7;
+                            }
+                            p{
+                                font-family: Montserrat;
+                                font-weight: 400;
+                                font-size: 15px;
+                                color: #999;
+                                line-height: 1.7;
+                                margin-bottom: 18px;
+                            }
+                            .twit-date{
+                                font-family: Montserrat;
+                                font-weight: 400;
+                                font-size: 13px;
+                                color: #555;
+                            }
+                        }
+                    }
+                    .gallery{
+                        width: 33%;
+                        padding: 50px 15px 0px;
+                        h3{
+                            font-family: Poppins;
+                            font-weight: 500;
+                            font-size: 18px;
+                            color: #fff;
+                            text-transform: uppercase;
+                            letter-spacing: 2px; 
+                            margin-bottom: 38px;
+                        }
+                        .gallery-picture{
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            flex-wrap: wrap;
+                        }
+                        a{
+                            width: calc((100% - 50px) / 4 );
+                            margin-right: 10px;
+                            margin-bottom: 10px;
+                            img{
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .footer-buttom{
+            width: 100%;
+            background-color: #111;
+            .container{
+                .footer-end{
+                    padding: 22px 0px;
+                    @include between;
+                    flex-wrap: wrap;
+                    .footer-social-nav{
+                        padding:5px 0px;
+                        nav{
+                            .social-list{
+                                display: flex;
+                                justify-content: space-between;
+                                flex-wrap: wrap;
+                                .social-list-item{
+                                    margin-right: 10px;
+                                    a{
+                                        font-size: 15px;
+                                        color: #fff;
+                                        @include hover-a;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .copywrite{
+                        padding-top: 5px;
+                        padding-bottom: 5px;
+                        padding-right: 20px;
+                        font-size: 14px;
+                        line-height: 1.7;
+                        color: #999;
+                        a{
+                            font-size: 14px;
+                            line-height: 1.7;
+                            color: #ccc;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width:768px){
+    footer{
+        .footer{
+            .footer-top{
+                .container{
+                    .information{
+                        .information-about{
+                            width: 50%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width:768px){
+    footer{
+        .footer{
+            .footer-top{
+                .container{
+                    .information{
+                        .information-about{
+                            width: 50%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width:460px){
+    footer{
+        .footer{
+            .footer-top{
+                .container{
+                    .information{
+                        .information-about{
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

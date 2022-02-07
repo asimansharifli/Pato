@@ -1,0 +1,21 @@
+@mixin center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin between{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+@mixin hover-a{
+        &:hover{
+            color: $Primary;
+        }  
+}
+@mixin hover-img{
+    transition: all 0.7s;
+    &:hover{
+        transform: scale(1.09);
+    }
+}

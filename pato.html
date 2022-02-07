@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PATO</title>
+    <link rel="stylesheet" href="pato.css">
+</head>
+<body>
+    <!-- Start Header-->
+    <header>
+        <div class="header">
+            <div class="container">
+                <div class="navigation-bar">
+                    <!-- Add Logo -->
+                    <figure class="logo">
+                        <a href="pota.html">                           
+                            <img src="./Assets/Image/logo.png" alt="PATO Restuarant">
+                        </a> 
+                    </figure>
+                    <!-- Start Navbar -->
+                    <div class="navbar">
+                        <nav>
+                            <ul class="nav-list">
+                                <li class="nav-list-item">
+                                    <a href="#" class="nav-list-a">Home</a>
+                                </li>
+                                <li class="nav-list-item">
+                                    <a href="#" class="nav-list-a">Menu</a>
+                                </li>
+                                <li class="nav-list-item">
+                                    <a href="#" class="nav-list-a">Reservation</a>
+                                </li>
+                                <li class="nav-list-item">
+                                    <a href="#" class="nav-list-a">Gallery</a>
+                                </li>
+                                <li class="nav-list-item">
+                                    <a href="#" class="nav-list-a">About</a>
+                                </li>
+                                <li class="nav-list-item">
+                                    <a href="#" class="nav-list-a">Blog</a>
+                                </li>
+                                <li class="nav-list-item">
+                                    <a href="#" class="nav-list-a">Contact</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <!-- End Navbar -->
+                    <!-- Start Social Navbar-->
+                    <div class="social-nav">
+                        <ul class="social-list">
+                            <li class="social-list-item">
+                                <a href="#">
+                                    <i class="fas fa-mask"></i>
+                                </a>
+                            </li>
+                            <li class="social-list-item">
+                                <a href="#">
+                                    <i class="fa fa-facebook m-l-21" aria-hidden="true" ></i>                                </a>
+                            </li>
+                            <li class="social-list-item">
+                                <a href="#">
+                                    <i class="fa fa-twitter m-l-21" aria-hidden="true"></i>       
+                            </li>
+                            <li class="social-list-item">
+                                <a href="#"  onclick="openNav()">
+                                    <i class="fas fa-bars" ></i>
+                                </a>
+                            </li>
+                        </ul>
+                        <div id="mySidenav" class="sidenav">
+                            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+                            <ul class="menu-sidebar-list">
+                                <li class="menu-sidebar-list-item">
+                                <a href="pato.html" class="txt">Home</a>
+                                </li>
+                                <li class="menu-sidebar-list-item">
+                                <a href="#" class="txt">Menu</a>
+                                </li>
+                                <li class="menu-sidebar-list-item">
+                                <a href="#" class="txt">Gallery</a>
+                                </li>
+                                <li class="menu-sidebar-list-item">
+                                <a href="#" class="txt">About</a>
+                                </li>
+                                <li class="menu-sidebar-list-item">
+                                <a href="#" class="txt">Blog</a>
+                                </li>
+                                <li class="menu-sidebar-list-item">
+                                <a href="#" class="txt">Contact</a>
+                                </li>
+                                <li class="menu-sidebar-list-item">
+                                    <div class="r-btn">
+                                        <a href="#" class="btn">
+                                        Reservation
+                                        </a>
+                                    </div>
+                                </li>
+                                </ul>
+                                <div class="gallery">
+                                    <h3>Gallery</h3>
+                                    <div class="gallery-picture">
+                                        <a href="https://preview.colorlib.com/theme/pato/images/photo-gallery-01.jpg.webp">
+                                            <img src="./Assets/Image/pepper.jpg">
+                                        </a>
+                                        <a href="https://preview.colorlib.com/theme/pato/images/photo-gallery-02.jpg.webp">
+                                            <img src="./Assets/Image/bread.jpg" >
+                                        </a>
+                                        <a href="https://preview.colorlib.com/theme/pato/images/photo-gallery-03.jpg.webp">
+                                           <img src="./Assets/Image/meat.jpg" >
+                                       </a>
+                                       <a href="https://preview.colorlib.com/theme/pato/images/photo-gallery-05.jpg.webp">
+                                           <img src="./Assets/Image/thumb.jpg" >
+                                       </a>
+                                       <a href="https://preview.colorlib.com/theme/pato/images/photo-gallery-06.jpg.webp">
+                                           <img src="./Assets/Image/wine.jpg" >
+                                       </a>
+                                       <a href="https://preview.colorlib.com/theme/pato/images/photo-gallery-07.jpg.webp">
+                                           <img src="./Assets/Image/shef.jpg" >
+                                       </a>
+                                       <a href="https://preview.colorlib.com/theme/pato/images/xphoto-gallery-thumb-09.jpg.pagespeed.ic.t8ZvgF1Sx6.webp">
+                                           <img src="./Assets/Image/city.jpg" >
+                                       </a>
+                                       <a href="https://preview.colorlib.com/theme/pato/images/xphoto-gallery-thumb-10.jpg.pagespeed.ic.jfz4XMmuMk.webp">
+                                           <img src="./Assets/Image/cake.jpg" >
+                                       </a>
+                                       <a href="https://preview.colorlib.com/theme/pato/images/photo-gallery-11.jpg.webp">
+                                           <img src="./Assets/Image/plate.jpg" >
+                                       </a>
+                                    </div>
+                                </div>
+                          </div>
+                    </div>
+                    <!-- End Social Navbar-->
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- End Header-->
+    <!--Start Main-->
+    <main>
+            <!-- Start Slider Section-->
+            <section id="slider">
+                <div class="slider">
+                    <div class="slideshow-container">
+                        <div class="mySlides fade">
+                            <figure>
+                                <img src="./Assets/Image/slide1.jpg" style="width:100%">
+                            </figure>
+                            <div class="slider-content">
+                            <div class="container">
+                                <div class="text">
+                                    <h3>Welcome</h3>
+                                    <h1>Pato Place</h1>
+                                </div>
+                                <a href="pato.html">Look Menu</a>
+                            </div>
+                        </div> 
+                        </div>
+                        <div class="mySlides fade">
+                            <figure>
+                                <img src="./Assets/Image/master-slides-02.jpg" style="width:100%">
+                            </figure>
+                        <div class="slider-content">
+                            <div class="container">
+                                <div class="text">
+                                    <h3>Welcome</h3>
+                                    <h1>Pato Place</h1>
+                                </div>
+                                <a href="pato.html">Look Menu</a>
+                            </div>
+                        </div> 
+                        </div>
+                        <div class="mySlides fade">
+                            <figure>
+                                <img src="./Assets/Image/master-slides-03.jpg" style="width:100%">
+                            </figure>
+                            <div class="slider-content">
+                                <div class="container">
+                                    <div class="text">
+                                        <h3>Welcome</h3>
+                                        <h1>Pato Place</h1>
+                                    </div>
+                                    <a href="pato.html">Look Menu</a>
+                                </div>
+                            </div> 
+                        </div>
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>              
+                        <div class="dots" style="text-align:center">
+                            <span class="dot" onclick="currentSlide(1)"></span> 
+                            <span class="dot" onclick="currentSlide(2)"></span> 
+                            <span class="dot" onclick="currentSlide(3)"></span> 
+                        </div>
+                        </div>   
+                </div>
+            </section>
+            <!-- End Slider Section-->
+            <!-- Start Welcome Section-->
+            <section id="welcome">
+                <div class="welcome">
+                    <div class="container">
+                        <div class="welcome-all">
+                            <div class="welcome-content">
+                                <h3>Itlian Restuarant</h3>
+                                <h2>Welcome</h2>
+                                <p>Donec quis lorem nulla. Nunc eu odio mi. Morbi nec lobortis est. Sed fringilla, nunc sed imperdiet lacinia, nisl ante egestas mi, ac facilisis ligula sem id neque.</p>
+                                <a href="#">Our Story 
+                                    <i class="fa fa-long-arrow-right m-l-10" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                            <div class="welcome-picture">
+                                <figure>
+                                    <img src="./Assets/Image/welcome.jpg" alt="Italian Resturant">
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End Welcome Section-->
+            <!-- Start Intro Section-->
+            <section id="intro">
+                <div class="intro">
+                    <div class="intro-parallax">
+                        <p>Discover</p>
+                        <h1>Pato Place</h1>
+                    </div>
+                    <div class="intro-content">
+                        <div class="container">
+                            <div class="intro-wrapper">
+                                <div class="intro-card">
+                                    <div class="intro-card-picture">
+                                        <a href="pato.html">
+                                            <img src="./Assets/Image/intro-card1.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="intro-card-content">
+                                        <a href="pato.html">
+                                            <h3>Romantic Restaurant</h3>
+                                        </a>
+                                        <p>Phasellus lorem enim, luctus ut velit eget, con-vallis egestas eros.</p>
+                                        <a href="pato.html">
+                                            Learn More
+                                            <i class="fa fa-long-arrow-right m-l-10" aria-hidden="true"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="intro-card">
+                                    <div class="intro-card-picture">
+                                        <a href="pato.html">
+                                            <img src="./Assets/Image/intro-card2.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="intro-card-content">
+                                        <a href="pato.html">
+                                            <h3>Delicious Food</h3>
+                                        </a>
+                                        <p>Aliquam eget aliquam magna, quis posuere risus ac justo ipsum nibh urna.</p>
+                                        <a href="pato.html">
+                                            Learn More
+                                            <i class="fa fa-long-arrow-right m-l-10" aria-hidden="true"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="intro-card">
+                                    <div class="intro-card-picture">
+                                        <a href="pato.html">
+                                            <img src="./Assets/Image/intro-card3.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="intro-card-content">
+                                        <a href="pato.html">
+                                            <h3>Red Wines You Love</h3>
+                                        </a>
+                                        <p>Sed ornare ligula eget tortor tempor, quis porta tellus dictum.</p>
+                                        <a href="pato.html">
+                                            Learn More
+                                            <i class="fa fa-long-arrow-right m-l-10" aria-hidden="true"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End Intro Section-->
+            <!-- Start Our Menu Section-->
+            <section id="our-menu">
+                <div class="our-menu">
+                    <div class="container">
+                        <div class="our-menu-all">
+                            <div class="our-menu-content">
+                                <p>Discover</p>
+                                <h3>Our Menu</h3>
+                            </div>
+                            <div class="our-menu-wrapper">
+                                <div class="our-menu-cards-first">
+                                    <div class="our-menu-card">
+                                        <div class="our-menu-row-card">
+                                            <div class="row-card">
+                                                <img src="./Assets/Image/lunch.jpg">
+                                                <a href="pato.html">Lunch</a>
+                                            </div>
+                                        </div>
+                                        <div class="our-menu-row-card">
+                                            <div class="row-card">
+                                                <img src="./Assets/Image/dinner.jpg" >
+                                                <a href="pato.html">Dinner</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="our-menu-card-buttom">
+                                        <div class="row-card">
+                                            <img src="./Assets/Image/happy.jpg" >
+                                            <a href="pato.html">Happy Hour</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="our-menu-cards-second">
+                                    <div class="our-menu-column-card">
+                                        <div class="column-card">
+                                            <img src="./Assets/Image/drink.jpg" >
+                                            <a href="pato.html">Drink</a>
+                                        </div>
+                                    </div>
+                                    <div class="our-menu-column-card">
+                                        <div class="column-card">
+                                            <img src="./Assets/Image/startest.jpg" >
+                                            <a href="pato.html">Starters</a>
+                                        </div>
+                                    </div>
+                                    <div class="our-menu-column-card">
+                                        <div class="column-card">
+                                            <img src="./Assets/Image/dessert.jpg">
+                                            <a href="pato.html">Dessert</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End Our Menu Section-->
+            <!-- End Reservation Section-->            
+            <section id="reservation">
+                <div class="container">
+                    <div class="reservation">
+                        <div class="book-table">
+                            <div class="book-table-content">
+                                <p class="tablep">Reservation</p>
+                                <h3>BOOK TABLE</h3>
+                                <form>
+                                    <div class="form-row">
+                                        <div class="form-column first">
+                                            <p>Date</p>
+                                            <input type="date" class="date">
+                                            <p>Time</p>
+                                            <div class="sel-op">
+                                                <select class="selection" name="time">
+                                                    <option>9:00</option>
+                                                    <option>9:30</option>
+                                                    <option>10:00</option>
+                                                    <option>10:30</option>
+                                                    <option>11:00</option>
+                                                    <option>11:30</option>
+                                                    <option>12:00</option>
+                                                    <option>12:30</option>
+                                                    <option>13:00</option>
+                                                    <option>13:30</option>
+                                                    <option>14:00</option>
+                                                    <option>14:30</option>
+                                                    <option>15:00</option>
+                                                    <option>15:30</option>
+                                                    <option>16:00</option>
+                                                    <option>16:30</option>
+                                                    <option>17:00</option>
+                                                    <option>17:30</option>
+                                                    <option>18:00</option>
+                                                </select>
+                                            </div>
+                                            <p>Person</p>
+                                            <div class="sel-op">
+                                                <select class="selection" name="people" tabindex="-1" aria-hidden="true">
+                                                    <option>1 person</option>
+                                                    <option>2 people</option>
+                                                    <option>3 people</option>
+                                                    <option>4 people</option>
+                                                    <option>5 people</option>
+                                                    <option>6 people</option>
+                                                    <option>7 people</option>
+                                                    <option>8 people</option>
+                                                    <option>9 people</option>
+                                                    <option>10 people</option>
+                                                    <option>11 people</option>
+                                                    <option>12 people</option>
+                                                    </select>
+                                            </div>
+                                        </div>
+                                        <div class="form-column second">
+                                            <p>Name</p>
+                                            <div class="name">
+                                                <input type="text" name="name" placeholder="Name">
+                                            </div>
+                                            <p>Phone</p>
+                                            <div class="phone">
+                                                <input type="phone" name="phone" placeholder="Phone">
+                                            </div>
+                                            <p>Email</p>
+                                            <div class="email">
+                                                <input type="email" name="email" placeholder="Email">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="btn">
+                                        <button type="submit">Book Table</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="resrvation-picture">
+                            <figure>
+                                <img src="./Assets/Image/reservation.jpg">
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End  Reservation Section-->   
+            <section id="customer">
+                <div class="customer">
+                    <div class="customer-content">
+                        <p>Customers Say</p>
+                        <h3>Review</h3>
+                    </div>
+                    <div class="customer-slider">
+                        <div class="slideshow-container3">
+    
+                            <div class="mySlides fade">
+                                <figure>
+                                    <img src="./Assets/Image/xavatar-01.jpg" style="width:100%">
+                                </figure>
+                                <div class="customer-conntent">
+                                    <p>We are lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tellus sem, mattis in pre-tium nec, fermentum viverra dui ”</p>
+                                    <div class="star-review fs-18 color0 flex-c-m m-t-12">
+                                        <i class="fa fa-star" style="color: #ec1d25;"></i>
+                                        <i class="fa fa-star" style="color: #ec1d25;"></i>
+                                        <i class="fa fa-star " style="color: #ec1d25;"></i>
+                                        <i class="fa fa-star" style="color: #ec1d25;"></i>
+                                        <i class="fa fa-star" style="color: #ec1d25;"></i>
+                                    </div>
+                                        <div class="inf">
+                                            Marie Simmons ˗ New York
+                                        </div>
+                                </div>
+                            </div>
+                            
+                            <div class="mySlides fade">
+                                <figure>
+                                    <img src="./Assets/Image/xavatar-01.jpg" style="width:100%">
+                                </figure>
+                                <div class="customer-conntent">
+                                    <p>We are lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tellus sem, mattis in pre-tium nec, fermentum viverra dui ”</p>
+                                    <div class="star-review fs-18 color0 flex-c-m m-t-12">
+                                        <i class="fa fa-star" style="color: #ec1d25;"></i>
+                                        <i class="fa fa-star" style="color: #ec1d25;"></i>
+                                        <i class="fa fa-star " style="color: #ec1d25;"></i>
+                                        <i class="fa fa-star" style="color: #ec1d25;"></i>
+                                        <i class="fa fa-star" style="color: #ec1d25;"></i>
+                                    </div>
+                                        <div class="inf">
+                                            Marie Simmons ˗ New York
+                                        </div>
+                                </div>
+                            </div>
+                            
+                            
+                            <div class="mySlides fade">
+                                <figure>
+                                    <img src="./Assets/Image/xavatar-01.jpg" style="width:100%">
+                                </figure>
+                                <div class="customer-conntent">
+                                    <p>We are lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tellus sem, mattis in pre-tium nec, fermentum viverra dui ”</p>
+                                    <div class="star-review fs-18 color0 flex-c-m m-t-12">
+                                        <i class="fa fa-star" style="color: #ec1d25;"></i>
+                                        <i class="fa fa-star" style="color: #ec1d25;"></i>
+                                        <i class="fa fa-star " style="color: #ec1d25;"></i>
+                                        <i class="fa fa-star" style="color: #ec1d25;"></i>
+                                        <i class="fa fa-star" style="color: #ec1d25;"></i>
+                                    </div>
+                                        <div class="inf">
+                                            Marie Simmons ˗ New York
+                                        </div>
+                                </div>
+                            </div>
+                            
+                            
+                            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                            
+                            </div>
+                            <br>
+                            
+                            <div style="text-align:center">
+                              <span class="dot-black" onclick="currentSlide(1)"></span> 
+                              <span class="dot-black" onclick="currentSlide(2)"></span> 
+                              <span class="dot-black" onclick="currentSlide(3)"></span> 
+                            </div>
+                    </div>
+                        </div> 
+            </section>         
+            <!-- Start Our Video Section-->
+            <section id="our-video">
+                <div class="our-video">
+                    <div class="our-video-content">
+                        <p>Discover</p>
+                        <h3>OUR VIDEO</h3>
+                    </div>
+                    <div class="our-video-play">
+                        <div class="our-video-play-button">
+                            <i class="fa fa-play"></i>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End Our Video Section-->
+            <!-- Start Blog Section-->
+            <section id="blog">
+                <div class="container">
+                    <div class="blog">
+                        <div class="blog-content">
+                            <p>Latest News</p>
+                            <h3>THE BLOG</h3>
+                        </div>
+                        <div class="blog-wrapper">
+                            <div class="blog-card-column">
+                                <div class="blog-card">
+                                    <div class="blog-card-picture">
+                                        <a href="#">
+                                            <img src="./Assets/Image/blog-01.jpg">
+                                        </a>
+                                        <p>21 Dec 2017</p>
+                                    </div>
+                                    <div class="blog-card-content">
+                                        <a href="#"><h4>Best Places for Wine</h4></a>
+                                        <p>Phasellus lorem enim, luctus ut velit eget, con-vallis egestas eros.</p>
+                                        <a href="#">Continue Reading<i class="fa fa-long-arrow-right m-l-10" aria-hidden="true"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="blog-card-column">
+                                <div class="blog-card">
+                                    <div class="blog-card-picture">
+                                        <a href="#">
+                                            <img src="./Assets/Image/blog-02.jpg">
+                                        </a>
+                                        <p>21 Dec 2017</p>
+                                    </div>
+                                    <div class="blog-card-content">
+                                        <a href="#"><h4>EGGS AND CHEESE</h4></a>
+                                        <p>Duis elementum, risus sit amet lobortis nunc justo condimentum ligula, vitae feugiat</p>
+                                        <a href="#">Continue Reading<i class="fa fa-long-arrow-right m-l-10" aria-hidden="true"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="blog-card-column">
+                                <div class="blog-card">
+                                    <div class="blog-card-picture">
+                                        <a href="#">
+                                            <img src="./Assets/Image/blog-03.jpg">
+                                        </a>
+                                        <p>21 Dec 2017</p>
+                                    </div>
+                                    <div class="blog-card-content">
+                                        <a href="#"><h4>STYLE THE WEDDING PARTY</h4></a>
+                                        <p>Sed ornare ligula eget tortor tempor, quis porta tellus dictum.</p>
+                                        <a href="#">Continue Reading<i class="fa fa-long-arrow-right m-l-10" aria-hidden="true"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End Blog Section-->
+            <!-- Start Sing Up Section-->
+            <section id="sing-up">
+                <div class="sing-up">
+                    <form >
+                        <span>Specials Sign up</span>
+                        <div class="input">
+                            <input type="mail" name="email-adress" placeholder="Email Adress">
+                            <i class="fa fa-envelope ab-r-m m-r-18" aria-hidden="true"></i>
+                        </div>
+                        <button type="submit">Sing-Up</button>
+                    </form>
+                </div>              
+            </section>
+            <!-- End Sing Up Section-->
+
+    </main>
+    <!--End Main-->
+    <!-- Start Footer -->
+    <footer>
+         <div class="footer">
+             <div class="footer-top">
+                 <div class="container">
+                     <div class="information">
+                         <div class="information-about">
+                             <div class="contact-us">
+                                 <h3>Contact Us</h3>
+                                 <ul class="contact-us-list">
+                                     <li class="contact-us-list-item">
+                                         <a href="https://www.google.com/maps/place/379+Hudson+St+8th+floor,+New+York,+NY+10018,+Amerika+Birle%C5%9Fik+Devletleri/@40.7286077,-74.0095779,17z/data=!3m1!4b1!4m5!3m4!1s0x89c259f2a6784fab:0x38cd75721bbf535b!8m2!3d40.7286077!4d-74.0073892"><i class="fa fa-map-marker"></i>  8th floor, 379 Hudson St, New York, NY 10018</a>
+                                     </li>
+                                     <li class="contact-us-list-item">
+                                         <a href="tel:+1) 96 716 6879"><i class="fa fa-phone"></i>     
+                                            (+1) 96 716 6879</a>
+                                     </li>
+                                     <li class="contact-us-list-item">
+                                        <a href="mailto:contact@site.com"><i class="fa fa-envelope"></i>     
+                                            contact@site.com</a>
+                                    </li>
+                                 </ul>
+                             </div>
+                             <div class="times">
+                                 <h3>Opening Times</h3>
+                                 <ul class="times-list">
+                                     <li class="times-list-item">09:30 AM - 11:00 PM</li>
+                                     <li class="times-list-item">Every Day</li>
+                                 </ul>
+                             </div>
+                         </div>
+                         <div class="twitter">
+                             <h3>latest Twitter</h3>
+                             <div class="twit">
+                                 <span><i class="fa fa-twitter"></i></span>
+                                 <a href="#">@colorlib</a>
+                                 <p>Activello is a good option. It has a slider built into that displays the featured image in the slider.
+                                     <a href="#">https://buff.ly/2zaSfAQ</a>
+                                 </p>
+                                 <span class="twit-date">21 Dec 2017</span>
+                            </div>
+                            <div class="twit">
+                                <span><i class="fa fa-twitter"></i></span>
+                                <a href="#">@colorlib</a>
+                                <p>Activello is a good option. It has a slider built into that displays
+                                    <a href="#">https://buff.ly/2zaSfAQ</a>
+                                </p>
+                                <span class="twit-date">21 Dec 2017</span>
+                            </div>
+                         </div>
+                         <div class="gallery">
+                             <h3>Gallery</h3>
+                             <div class="gallery-picture">
+                                 <a href="https://preview.colorlib.com/theme/pato/images/photo-gallery-01.jpg.webp">
+                                     <img src="./Assets/Image/pepper.jpg">
+                                 </a>
+                                 <a href="https://preview.colorlib.com/theme/pato/images/photo-gallery-02.jpg.webp">
+                                     <img src="./Assets/Image/bread.jpg" >
+                                 </a>
+                                 <a href="https://preview.colorlib.com/theme/pato/images/photo-gallery-03.jpg.webp">
+                                    <img src="./Assets/Image/meat.jpg" >
+                                </a>
+                                <a href="https://preview.colorlib.com/theme/pato/images/photo-gallery-04.jpg.webp">
+                                    <img src="./Assets/Image/fish.jpg" >
+                                </a>
+                                <a href="https://preview.colorlib.com/theme/pato/images/photo-gallery-05.jpg.webp">
+                                    <img src="./Assets/Image/thumb.jpg" >
+                                </a>
+                                <a href="https://preview.colorlib.com/theme/pato/images/photo-gallery-06.jpg.webp">
+                                    <img src="./Assets/Image/wine.jpg" >
+                                </a>
+                                <a href="https://preview.colorlib.com/theme/pato/images/photo-gallery-07.jpg.webp">
+                                    <img src="./Assets/Image/shef.jpg" >
+                                </a>
+                                <a href="https://preview.colorlib.com/theme/pato/images/xphoto-gallery-thumb-08.jpg.pagespeed.ic.ujpNk_r1D9.webp">
+                                    <img src="./Assets/Image/lunch.jpg" >
+                                </a>
+                                <a href="https://preview.colorlib.com/theme/pato/images/xphoto-gallery-thumb-09.jpg.pagespeed.ic.t8ZvgF1Sx6.webp">
+                                    <img src="./Assets/Image/city.jpg" >
+                                </a>
+                                <a href="https://preview.colorlib.com/theme/pato/images/xphoto-gallery-thumb-10.jpg.pagespeed.ic.jfz4XMmuMk.webp">
+                                    <img src="./Assets/Image/cake.jpg" >
+                                </a>
+                                <a href="https://preview.colorlib.com/theme/pato/images/photo-gallery-11.jpg.webp">
+                                    <img src="./Assets/Image/plate.jpg" >
+                                </a>
+                                <a href="https://preview.colorlib.com/theme/pato/images/photo-gallery-12.jpg.webp">
+                                    <img src="./Assets/Image/toy.jpg" >
+                                </a>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+              <div class="footer-buttom">
+                 <div class="container">
+                     <div class="footer-end">
+                    <div class="footer-social-nav">
+                        <nav>                        
+                            <ul class="social-list">
+                                <li class="social-list-item">
+                                    <a href="#">
+                                        <i class="fas fa-mask"></i>
+                                    </a>
+                                </li>
+                                <li class="social-list-item">
+                                    <a href="#">
+                                        <i class="fa fa-facebook m-l-21" aria-hidden="true" ></i>                                </a>
+                                </li>
+                                <li class="social-list-item">
+                                    <a href="#">
+                                        <i class="fa fa-twitter m-l-21" aria-hidden="true"></i> 
+                                    </a>      
+                                </li> 
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="copywrite">
+                        <span>
+                            @ 2017 Colorlib.
+                        </span>
+                        <a href="#">Get The Theme</a>
+                        </div>
+                     </div>
+                 </div>
+             </div> 
+         </div>
+    </footer>
+    <!-- End Footer -->
+
+    <script
+    src="https://kit.fontawesome.com/2950db5552.js"
+    crossorigin="anonymous"></script>
+    <script src="./Assets/JS/pato.js"></script>
+    </body>
+</html>
